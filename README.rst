@@ -72,7 +72,7 @@ With pip
 You can install the latest snapshot of django-celery-results using the following
 pip command::
 
-    $ pip install https://github.com/celery/django-celery-results/zipball/master#egg=django-celery-results
+    $ pip install https://github.com/tongpi/django-celery-results/zipball/master#egg=django-celery-results
 
 .. |build-status| image:: https://secure.travis-ci.org/celery/django-celery-results.svg?branch=master
     :alt: Build status
