@@ -32,11 +32,11 @@ class TaskResult(models.Model):
     content_encoding = models.CharField(
         _('content encoding'), max_length=64,
     )
-    result = models.TextField(null=True, default=None, editable=False)
+    result = models.TextField(_('result'), null=True, default=None, editable=False)
     date_done = models.DateTimeField(_('done at'), auto_now=True)
     traceback = models.TextField(_('traceback'), blank=True, null=True)
-    hidden = models.BooleanField(editable=False, default=False, db_index=True)
-    meta = models.TextField(null=True, default=None, editable=False)
+    hidden = models.BooleanField(_('hidden'),editable=False, default=False, db_index=True)
+    meta = models.TextField(_('meta'),null=True, default=None, editable=False)
 
     objects = managers.TaskResultManager()
 
