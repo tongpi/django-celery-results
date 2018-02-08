@@ -5,6 +5,7 @@ from django.contrib import admin
 
 from .models import TaskResult
 
+from django.utils.translation import ugettext_lazy as _
 
 class TaskResultAdmin(admin.ModelAdmin):
     """Admin-interface for results of tasks."""
@@ -22,7 +23,7 @@ class TaskResultAdmin(admin.ModelAdmin):
             ),
             'classes': ('extrapretty', 'wide')
         }),
-        ('Result', {
+        (_('Result'), {
             'fields': (
                 'result',
                 'date_done',
